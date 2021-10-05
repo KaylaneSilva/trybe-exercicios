@@ -11,17 +11,19 @@
   left: 70px;
   z-index: 2;
 }
-
+.fala {
+  padding: 20px;
+background-color: burlywood;
+}
 .baloon {
 position: absolute;
 z-index: 3;
-top: 600px;
+top: 600px
 }
 
 .speach {
   font-size: 25px;
 }
-
 .bowser {
   width: 200px;
 }
