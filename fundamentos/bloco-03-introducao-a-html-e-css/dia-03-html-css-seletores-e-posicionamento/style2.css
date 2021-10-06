@@ -1,33 +1,33 @@
 .super-mario {
   width: 200px;
   position: absolute;
-  z-index: 1;
-  top: 600px;
+  left: 50px;
+  top: 100px;
 }
 
 .goomba {
   width: 100px;
   position: absolute;
-  top: 870px;
-  left: 70px;
-  z-index: 2;
-}
-.fala {
-background-color: burlywood;
+  top: 400px;
+  left: 100px;
 }
 .baloon {
 position: absolute;
-z-index: 3;
-top: 100px
+top: 200px;
+left: 350px;
 }
 
 .speach {
   font-size: 25px;
-  top: 140px;
-  z-index: 4;
+  top: 240px;
+  z-index: 2;
   position: absolute;
-  left: 30px;
+  left: 370px;
 }
 .bowser {
   width: 200px;
+  left: 650px;
+  top: 250px;
+  position: absolute;
 }
+/* posicionamento do bowser deu errado */
