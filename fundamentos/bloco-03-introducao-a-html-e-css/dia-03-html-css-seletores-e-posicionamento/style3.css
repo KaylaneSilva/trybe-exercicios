@@ -5,3 +5,6 @@ h1, p {
 li:hover {
   background-color: salmon;
 }
+li:active {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
