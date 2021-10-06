@@ -20,3 +20,10 @@ li {
 li em {
   font-weight: 600;
 }
+.sites li:not(:nth-child(n + 4)) {
+color: #0000ff;
+}
+
+.java {
+  background-color: pink;
+}
