@@ -16,6 +16,7 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+  display: inline-block;
 }
 
 .third {
@@ -24,4 +25,13 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+  display: inline-block;
+}
+ul {
+  font-family: 'Times New Roman', Times, serif;
+  list-style-type: none;
+}
+.podium {
+  margin: 100px;
+  align-content: center;
 }
