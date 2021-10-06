@@ -2,27 +2,31 @@
   width: 200px;
   position: absolute;
   z-index: 1;
+  top: 600px;
 }
 
 .goomba {
   width: 100px;
   position: absolute;
-  top: 370px;
+  top: 870px;
   left: 70px;
   z-index: 2;
 }
 .fala {
-  padding: 20px;
 background-color: burlywood;
 }
 .baloon {
 position: absolute;
 z-index: 3;
-top: 600px
+top: 100px
 }
 
 .speach {
   font-size: 25px;
+  top: 140px;
+  z-index: 4;
+  position: absolute;
+  left: 30px;
 }
 .bowser {
   width: 200px;
