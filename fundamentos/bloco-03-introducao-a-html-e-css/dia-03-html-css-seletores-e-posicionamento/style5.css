@@ -1,0 +1,9 @@
+.phrases li {
+background-color: darkgoldenrod;
+}
+.phrases li:nth-child(even){
+color: green;
+}
+.phrases li:nth-child(odd) {
+  text-transform: uppercase;
+}
