@@ -31,14 +31,26 @@
 
 // parte 3
 
-const e = 738;
-const f = 398;
-const g = 947;
+// const e = 738;
+// const f = 398;
+// const g = 947;
 
-if ( e > f && e > g) {
-console.log ("'e' é maior que 'f' e 'g'")
-} else if (f > e && f > g) {
-  console.log ("'f' é maior que 'e' e 'g'")
+// if ( e > f && e > g) {
+// console.log ("'e' é maior que 'f' e 'g'")
+// } else if (f > e && f > g) {
+//   console.log ("'f' é maior que 'e' e 'g'")
+// } else {
+//   console.log ("'g' é maior 'e' e 'f'")
+// };
+
+// parte 4 
+
+const numero = 0;
+
+if (numero > 0) {
+console.log ("positivo")
+} else if (numero < 0) {
+  console.log ("negativo")
 } else {
-  console.log ("'g' é maior 'e' e 'f'")
+  console.log (0)
 }
