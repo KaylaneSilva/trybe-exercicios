@@ -45,12 +45,26 @@
 
 // parte 4 
 
-const numero = 0;
+// const numero = 0;
 
-if (numero > 0) {
-console.log ("positivo")
-} else if (numero < 0) {
-  console.log ("negativo")
+// if (numero > 0) {
+// console.log ("positivo")
+// } else if (numero < 0) {
+//   console.log ("negativo")
+// } else {
+//   console.log (0)
+// }
+
+// parte 5
+
+let anguloA = 80;
+let anguloB = 90;
+let anguloC = 10;
+
+let triangulo = anguloA + anguloB + anguloC;
+
+if (triangulo === 180) {
+  console.log ("É um triângulo")
 } else {
-  console.log (0)
-}
+  console.log ("Não é um triângulo")
+};
