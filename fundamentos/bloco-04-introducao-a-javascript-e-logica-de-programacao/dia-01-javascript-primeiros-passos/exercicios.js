@@ -57,14 +57,17 @@
 
 // parte 5
 
-let anguloA = 80;
-let anguloB = 90;
-let anguloC = 10;
+// let anguloA = 80;
+// let anguloB = 90;
+// let anguloC = 10;
 
-let triangulo = anguloA + anguloB + anguloC;
+// let triangulo = anguloA + anguloB + anguloC;
 
-if (triangulo === 180) {
-  console.log ("É um triângulo")
-} else {
-  console.log ("Não é um triângulo")
-};
+// if (triangulo === 180) {
+//   console.log ("É um triângulo")
+// } else {
+//   console.log ("Não é um triângulo")
+// };
+
+// parte 6
+
