@@ -71,27 +71,51 @@
 
 // parte 6
 
-const pecasXadrez = 'bispo';
+// const pecasXadrez = 'bispo';
 
-switch (pecasXadrez.toLocaleLowerCase()) {
-  case 'rei':
-    console.log('Rei-> Move-se para todas as direções pela vertical, horizontal ou diagonal, mas apenas uma casa por lance.');
-    break;
-  case 'bispo':
-    console.log('Bispo-> Move em uma linha reta diagonalmente no tabuleiro');
-    break;
-  case 'rainha':
-    console.log('Rainha-> Peça mais poderosa do jogo, uma vez que seu movimento combina o da torre e o do bispo, ou seja, pode mover-se pelas colunas, fileiras e diagonal de outra cor.');
-    break;
-  case 'cavalo':
-    console.log('Cavalo -> movimenta-se sempre em "L",ou seja,duas casas para frente e uma para a esquerda ou direita. O cavalo é a única peça que pode pular sobre as outras, tanto as suas quanto as adversárias.');
-    break;
-  case 'torre':
-    console.log('Torre -> Movimenta-se em direção reta pelas colunas ou fileiras.');
-    break;
-  case 'peão':
-    console.log("Peão -> Movimenta-se apenas uma casa para frente e captura outros peões e peças em diagonal. Ao contrário das outras peças, o peão não pode mover-se para trás.");
-    break;
-  default:
-    console.log('Erro, peça inexistente')
-}
+// switch (pecasXadrez.toLocaleLowerCase()) {
+//   case 'rei':
+//     console.log('Rei-> Move-se para todas as direções pela vertical, horizontal ou diagonal, mas apenas uma casa por lance.');
+//     break;
+//   case 'bispo':
+//     console.log('Bispo-> Move em uma linha reta diagonalmente no tabuleiro');
+//     break;
+//   case 'rainha':
+//     console.log('Rainha-> Peça mais poderosa do jogo, uma vez que seu movimento combina o da torre e o do bispo, ou seja, pode mover-se pelas colunas, fileiras e diagonal de outra cor.');
+//     break;
+//   case 'cavalo':
+//     console.log('Cavalo -> movimenta-se sempre em "L",ou seja,duas casas para frente e uma para a esquerda ou direita. O cavalo é a única peça que pode pular sobre as outras, tanto as suas quanto as adversárias.');
+//     break;
+//   case 'torre':
+//     console.log('Torre -> Movimenta-se em direção reta pelas colunas ou fileiras.');
+//     break;
+//   case 'peão':
+//     console.log("Peão -> Movimenta-se apenas uma casa para frente e captura outros peões e peças em diagonal. Ao contrário das outras peças, o peão não pode mover-se para trás.");
+//     break;
+//   default:
+//     console.log('Erro, peça inexistente')
+// }
+
+// parte 7
+
+const nota = 89;
+
+if (nota < 0 || nota > 100){
+  console.log('Nota incorreta');
+}else if (nota >= 90){
+  console.log('A')
+}else if (nota >= 80){
+  console.log('B')
+}else if (nota >= 70){
+  console.log('C')
+}else if (nota >= 60){
+  console.log('D')
+}else if (nota >= 50){
+  console.log('E')
+}else if (nota < 50){
+  console.log('F')
+};
+
+
+
+
