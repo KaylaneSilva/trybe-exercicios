@@ -1,12 +1,14 @@
+// exercicio1
+
 const myName = 'Kaylane';
 const birthCity = "Guarulhos";
 // birthCity = 'Taubaté'
 let birthYear = 2002;
 birthYear = 2030;
 
-console.log(myName);
-console.log(birthCity);
-console.log(birthYear);
+// console.log(myName);
+// console.log(birthCity);
+// console.log(birthYear);
 
 // teste para segunda parte do fixando aprendizagens
 
@@ -18,15 +20,28 @@ const patientInfo = {
 };
 const patientEmail = 'ana@email.com';
 
-console.log (typeof patientId);
-console.log (typeof patientAge);
+// console.log (typeof patientId);
+// console.log (typeof patientAge);
 
-// começo do exercicio da segunda parte 
+// exercicio 2 
 
 const base = 5
 let heigth = 8
+
 const area = base * heigth
 const perimeter = 2*base + 2*heigth
 
-console.log (area)
-console.log (perimeter)
+// console.log (area)
+// console.log (perimeter)
+
+// exercicio 3
+
+const notaDesafio = 50
+
+if(notaDesafio >= 80){
+  console.log ('Parabéns!! Você foi aprovada(o)!')
+}else if(notaDesafio <= 80 && notaDesafio >= 60) {
+  console.log ('Você está na lista de espera')
+}else {
+  console.log ('Você foi reprovada(o)')
+}
