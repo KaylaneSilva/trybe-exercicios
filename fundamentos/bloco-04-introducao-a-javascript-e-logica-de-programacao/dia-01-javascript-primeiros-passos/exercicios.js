@@ -118,13 +118,22 @@
 
 // parte 8
 
-const a = 20
-const b = 59
-const c = 83
-const par = 0
+const h = 20;
+const i = 53;
+const j = 89;
+const par = 0;
 
-if(a %2 == par || b %2 == par || c %2 == par){
-	console.log(true)
+if(h %2 == par || i %2 == par || j %2 == par){
+	// console.log(true)
 }else{
-	console.log(false)
-}
+	// console.log(false)
+};
+
+// parte 9
+
+// const pega do exercicio 8
+if(h %2 != par || i %2 != par || j %2 != par){
+	// console.log(true)
+}else{
+	// console.log(false)
+};
