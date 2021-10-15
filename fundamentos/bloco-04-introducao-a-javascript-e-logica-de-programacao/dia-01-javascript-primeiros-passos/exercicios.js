@@ -137,3 +137,16 @@ if(h %2 != par || i %2 != par || j %2 != par){
 }else{
 	// console.log(false)
 };
+
+// parte 10
+
+const valorCusto = 89;
+const valorCustoTotal = valorCusto + (valorCusto * 0,2);
+const valorVenda = 159;
+const lucro = valorVenda - valorCustoTotal;
+
+if(lucro >= 0) {
+ console.log('Você teve lucro')
+}else {
+  console.log('!!!Erro!!! Você está no vermelho')
+};
