@@ -71,7 +71,28 @@ message = 'Rango da noite, vamos jantar :D'
 let weekDay = 'sábado';
 
 if( weekDay == 'segunda-feira' || weekDay == 'terça-feira' || weekDay == 'quarta-feira' || weekDay == 'quinta-feira' || weekDay == 'sexta-feira') {
- console.log('Oba, mais um dia de aprendizado na Trybe >:D')
+  // console.log('Oba, mais um dia de aprendizado na Trybe >:D')
 }else {
-  console.log('FINALMENTE, descanso merecido UwU')
+  // console.log('FINALMENTE, descanso merecido UwU')
+};
+
+// exercicio 5
+
+const estadoCandidata = 'aprovada';
+
+switch (estadoCandidata) {
+  case 'aprovada':
+    console.log('Aprovada')
+    break;
+  
+  case 'lista':
+    console.log("Lista de espera")
+    break;
+  
+  case 'reprovada':
+    console.log('Reprovada')
+    break;
+  
+  default:
+    console.log('Não se aplica');
 };
