@@ -96,3 +96,5 @@ switch (estadoCandidata) {
   default:
     console.log('Não se aplica');
 };
+
+// .
