@@ -11,4 +11,9 @@ let ressultAdd = 0;
 for(let index = 0; index < numbers.length; index++) {
   ressultAdd += numbers[index]
 };
-console.log(ressultAdd)
+// console.log(ressultAdd)
+
+// parte 3
+
+let resultMed = ressultAdd / numbers.length;
+console.log(resultMed);
