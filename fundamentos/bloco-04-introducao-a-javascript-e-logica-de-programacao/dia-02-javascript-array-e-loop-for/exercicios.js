@@ -16,4 +16,12 @@ for(let index = 0; index < numbers.length; index++) {
 // parte 3
 
 let resultMed = ressultAdd / numbers.length;
-console.log(resultMed);
+// console.log(resultMed);
+
+// parte 4
+
+if(resultMed >= 20) {
+  console.log("Valor maior que 20")
+}else{
+  console.log("Valor menor que 20")
+};
