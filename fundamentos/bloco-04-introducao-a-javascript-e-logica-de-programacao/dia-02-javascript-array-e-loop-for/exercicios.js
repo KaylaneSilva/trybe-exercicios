@@ -21,7 +21,18 @@ let resultMed = ressultAdd / numbers.length;
 // parte 4
 
 if(resultMed >= 20) {
-  console.log("Valor maior que 20")
+  // console.log("Valor maior que 20")
 }else{
-  console.log("Valor menor que 20")
+  // console.log("Valor menor que 20")
 };
+
+// parte 5
+
+let maiorValor = numbers[0];
+
+for(let index = 1; index < numbers.length; index++) {
+  if (numbers[index] > maiorValor) {
+    maiorValor = numbers[index];
+  }
+}
+console.log(maiorValor);
