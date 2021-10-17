@@ -63,4 +63,17 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 
-console.log(menorValor)
+// console.log(menorValor);
+
+// parte 8
+
+let newNumbers = [];
+let newValue = 0;
+
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] < 26 && numbers[index] > 1) {
+    newNumbers.push(numbers[index])
+  }  
+}
+
+console.log(newNumbers);
