@@ -13,4 +13,9 @@ let info = {
 info.recorrente = 'sim';
 
 // console.log(info.recorrente);
-console.log(info)
+
+// parte 3
+
+for (const key in info) {
+  console.log(key);
+}
