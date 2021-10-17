@@ -39,30 +39,28 @@ for(let index = 1; index < numbers.length; index++) {
 
 // parte 6
 
-// let impares = 0;
+let impares = 0;
 
-// for(let i = 0; i < numbers.length; i++) {
-//   if (numbers[i] % 2 !== 0) {
-//     impares += 1;
-//   }
-// }
-
-// if(impares === 0) {
-//   console.log('nenhum valor ímpar encontrado');
-// }else {
-//   console.log(impares);
-// }
-
-let result = 0;
-
-for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers[index] % 2 !== 0) {
-    result += 1;
+for(let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 !== 0) {
+    impares += 1;
   }
 }
 
-if (result === 0) {
-  console.log('nenhum valor ímpar encontrado');
-} else {
-  console.log(result);
+if(impares === 0) {
+  // console.log('nenhum valor ímpar encontrado');
+}else {
+  // console.log(impares);
 }
+
+// parte 7
+
+let menorValor = numbers[0];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (menorValor > numbers[i]){
+    menorValor = numbers[i];
+  }
+}
+
+console.log(menorValor)
