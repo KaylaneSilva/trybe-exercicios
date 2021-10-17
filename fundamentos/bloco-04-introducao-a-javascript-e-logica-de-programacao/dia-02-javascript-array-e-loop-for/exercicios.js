@@ -76,4 +76,13 @@ for (let index = 0; index < numbers.length; index++) {
   }  
 }
 
-console.log(newNumbers);
+// console.log(newNumbers);
+
+// parte 9
+
+// let divisao = newNumbers / 2;
+
+for (let i = 0; i < newNumbers.length; i++) {
+    divisao = newNumbers[i] / 2;
+    console.log(divisao);
+}
