@@ -17,5 +17,11 @@ info.recorrente = 'sim';
 // parte 3
 
 for (const key in info) {
-  console.log(key);
+  // console.log(key);
+}
+
+// parte 4
+
+for (const key in info) {
+  console.log(info[key]);
 }
