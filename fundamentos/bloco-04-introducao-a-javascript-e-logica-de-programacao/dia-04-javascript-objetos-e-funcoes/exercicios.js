@@ -1,3 +1,5 @@
+// Objeto e Forin
+
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
@@ -37,8 +39,32 @@ let info2 = {
 
 for (const key in info2) {
   if (key === 'recorrente' && info.recorrente == 'sim' && info2.recorrente == 'sim') {
-  console.log('Ambos recorrentes');
+  // console.log('Ambos recorrentes');
   } else {
-    console.log(info[key] + ' e ' + info2[key]);
+    // console.log(info[key] + ' e ' + info2[key]);
   };
 }
+
+// Funções
+
+// parte 1
+
+function verificaPalindromo(word){
+  for(index in word){
+    if(word[index] != word[(word.length - 1) - index]){
+      return false;
+    }
+  }
+  return true;
+}
+function verificaPalindromo(string) {
+  let reverse = string.split('').reverse().join('');
+  if (reverse === string) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verificaPalindromo('arara'));
+console.log(verificaPalindromo('desenvolvimento'));
