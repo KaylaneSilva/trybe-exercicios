@@ -66,5 +66,21 @@ function verificaPalindromo(string) {
   }
 }
 
-console.log(verificaPalindromo('arara'));
-console.log(verificaPalindromo('desenvolvimento'));
+// console.log(verificaPalindromo('arara'));
+// console.log(verificaPalindromo('desenvolvimento'));
+
+// parte 2
+
+let numbers = [2, 3, 6, 7, 10, 1]
+
+function valueBig(numbers) {
+  let maiorValor = 0;
+  for ( let index in numbers) {
+    if (numbers[maiorValor] < numbers[index]){
+      maiorValor = index;
+    }
+  }
+  return maiorValor
+}
+
+console.log(valueBig(numbers))
