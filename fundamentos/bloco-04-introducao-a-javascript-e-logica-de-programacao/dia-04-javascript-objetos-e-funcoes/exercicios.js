@@ -83,4 +83,20 @@ function valueBig(numbers) {
   return maiorValor
 }
 
-console.log(valueBig(numbers))
+// console.log(valueBig(numbers))
+
+// parte 3
+
+let numeros = [2, 4, 6, 7, 10, 0, -3]
+
+function valueSmall(numeros) {
+  let menorValor = 0;
+  for (let small in numeros){
+    if (numeros[menorValor] > numeros[small]) {
+      menorValor = small;
+    }
+  }
+  return menorValor
+}
+
+// console.log(valueSmall(numeros))
