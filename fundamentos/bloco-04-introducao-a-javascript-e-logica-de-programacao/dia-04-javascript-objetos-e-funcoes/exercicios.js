@@ -100,3 +100,19 @@ function valueSmall(numeros) {
 }
 
 // console.log(valueSmall(numeros))
+
+// parte 4
+
+let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']
+
+function nameBig (name) {
+  let size = name[0];
+  for (let letters in name) {
+    if(size.length < name[letters].length) {
+      size = name[letters];
+    }
+  }
+  return size
+}
+
+console.log(nameBig(names))
