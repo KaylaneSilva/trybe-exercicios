@@ -43,3 +43,7 @@ console.log(primeiroFilhoAPartirPai)
 
 // exercicio 5
 console.log(ondeVoceEsta.parentNode)
+
+// exercicio 6
+console.log(ondeVoceEsta.parentNode.parentNode.innerText)
+
