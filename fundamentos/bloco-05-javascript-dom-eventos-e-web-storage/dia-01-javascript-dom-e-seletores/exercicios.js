@@ -12,6 +12,7 @@
         */
 
  let paragrafo = document.getElementsByTagName('p');
+ let paragrafoZero = document.getElementsByTagName('p')[0];
  let quadrado = document.getElementsByClassName('main-content')[0];
  let textoh1 = document.getElementsByClassName('title');
  let paragrafoFundo= document.getElementsByClassName('center-content')[0];
@@ -36,7 +37,7 @@ function VermelhoParaBranco(cor) {
   paragrafoFundo.style.background = 'white';
   return;
 }
-console.log(VermelhoParaBranco(paragrafoFundo));
+// console.log(VermelhoParaBranco(paragrafoFundo));
 
 // parte 4
 
@@ -44,4 +45,11 @@ function corrigirTexto(texto) {
   textoh1[0].innerText= 'Exercício 5.1 - JavaScript';
   return;
 }
-console.log(corrigirTexto(textoh1))
+// console.log(corrigirTexto(textoh1))
+
+// parte 5
+function maiusculo(text) {
+  paragrafoZero.innerHTML = paragrafoZero.innerHTML.toUpperCase();
+  return;
+}
+console.log(maiusculo(paragrafoZero));
