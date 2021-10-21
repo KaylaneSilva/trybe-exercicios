@@ -32,7 +32,7 @@ let imprimirElementoOndeVoce = ondeVoceEsta.parentNode;
 console.log(imprimirElementoOndeVoce)
 
 // exercicio 2
-imprimirElementoOndeVoce.style.color = 'green';
+let ondeVoceEstaParaPai = imprimirElementoOndeVoce.parentNode;  ondeVoceEstaParaPai.style.color = 'green';
 
 // exercicio 3
 acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página'
@@ -40,3 +40,6 @@ acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página'
 // exercicio 4
 let primeiroFilhoAPartirPai = acessarPai.firstElementChild
 console.log(primeiroFilhoAPartirPai)
+
+// exercicio 5
+console.log(ondeVoceEsta.parentNode)
