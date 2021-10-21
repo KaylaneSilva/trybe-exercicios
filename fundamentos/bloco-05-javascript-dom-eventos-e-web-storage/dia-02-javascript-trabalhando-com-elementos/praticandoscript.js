@@ -45,5 +45,7 @@ console.log(primeiroFilhoAPartirPai)
 console.log(ondeVoceEsta.parentNode)
 
 // exercicio 6
-console.log(ondeVoceEsta.parentNode.parentNode.innerText)
+console.log(ondeVoceEsta.nextElementSibling)
 
+// exercicio 7
+// console.log(ondeVoceEsta.parentNode.parentNode.parentNode)s
