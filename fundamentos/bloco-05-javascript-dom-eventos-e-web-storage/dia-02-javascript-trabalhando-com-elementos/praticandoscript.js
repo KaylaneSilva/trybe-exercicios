@@ -36,3 +36,7 @@ imprimirElementoOndeVoce.style.color = 'green';
 
 // exercicio 3
 acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página'
+
+// exercicio 4
+let primeiroFilhoAPartirPai = acessarPai.firstElementChild
+console.log(primeiroFilhoAPartirPai)
