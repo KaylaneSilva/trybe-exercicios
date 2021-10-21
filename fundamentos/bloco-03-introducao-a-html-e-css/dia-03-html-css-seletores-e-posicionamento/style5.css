@@ -1,0 +1,31 @@
+.phrases li {
+background-color: darkgoldenrod;
+}
+.phrases li:nth-child(even){
+color: green;
+}
+.phrases li:nth-child(odd) {
+  text-transform: uppercase;
+}
+.headers {
+  color: red;
+}
+.headers em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+li {
+  font-size: 20px;
+}
+li em {
+  font-weight: 600;
+}
+.sites li:not(:nth-child(n + 4)) {
+color: #0000ff;
+}
+
+.java {
+  background-color: pink;
+}
+
+/* fazer parte bonus do exercicio */
