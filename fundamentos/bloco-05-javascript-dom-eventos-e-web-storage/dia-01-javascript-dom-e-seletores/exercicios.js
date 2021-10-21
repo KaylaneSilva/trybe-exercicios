@@ -12,7 +12,7 @@
         */
 
  let paragrafo = document.getElementsByTagName('p');
- let quadrado = document.getElementsByClassName('mainContent');
+ let quadrado = document.getElementsByClassName('main-content')[0];
  let textoh1 = document.getElementsByTagName('h1');
  let paragrafoAll = document.getElementsByClassName('centerContent');
 
@@ -22,3 +22,10 @@
    return paragrafo;
  }
  console.log(mudandoOParagrafo(paragrafo));
+
+//  parte 2
+function amareloParaCorNova (color) {
+    quadrado.style.background = 'rgb(76,164,109)';
+  return;
+}
+console.log(amareloParaCorNova(quadrado));
