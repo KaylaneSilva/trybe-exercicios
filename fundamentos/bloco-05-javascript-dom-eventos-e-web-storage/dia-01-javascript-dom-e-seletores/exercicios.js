@@ -13,7 +13,7 @@
 
  let paragrafo = document.getElementsByTagName('p');
  let quadrado = document.getElementsByClassName('main-content')[0];
- let textoh1 = document.getElementsByTagName('h1');
+ let textoh1 = document.getElementsByClassName('title');
  let paragrafoFundo= document.getElementsByClassName('center-content')[0];
 
 //  parte 1
@@ -37,3 +37,11 @@ function VermelhoParaBranco(cor) {
   return;
 }
 console.log(VermelhoParaBranco(paragrafoFundo));
+
+// parte 4
+
+function corrigirTexto(texto) {
+  textoh1[0].innerText= 'Exercício 5.1 - JavaScript';
+  return;
+}
+console.log(corrigirTexto(textoh1))
