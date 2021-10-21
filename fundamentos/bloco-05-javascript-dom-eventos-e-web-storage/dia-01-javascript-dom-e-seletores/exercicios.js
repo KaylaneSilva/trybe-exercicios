@@ -14,18 +14,26 @@
  let paragrafo = document.getElementsByTagName('p');
  let quadrado = document.getElementsByClassName('main-content')[0];
  let textoh1 = document.getElementsByTagName('h1');
- let paragrafoAll = document.getElementsByClassName('centerContent');
+ let paragrafoFundo= document.getElementsByClassName('center-content')[0];
 
 //  parte 1
  function mudandoOParagrafo (p) {
    paragrafo[1].innerText = 'Me vejo trabalhando em uma empresa que eu goste e com minha carreira alvancada';
    return paragrafo;
  }
- console.log(mudandoOParagrafo(paragrafo));
+//  console.log(mudandoOParagrafo(paragrafo));
 
 //  parte 2
 function amareloParaCorNova (color) {
     quadrado.style.background = 'rgb(76,164,109)';
   return;
 }
-console.log(amareloParaCorNova(quadrado));
+// console.log(amareloParaCorNova(quadrado));
+
+// parte 3
+
+function VermelhoParaBranco(cor) {
+  paragrafoFundo.style.background = 'white';
+  return;
+}
+console.log(VermelhoParaBranco(paragrafoFundo));
