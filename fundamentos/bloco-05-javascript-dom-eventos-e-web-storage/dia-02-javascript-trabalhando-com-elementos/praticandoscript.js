@@ -29,20 +29,20 @@ let acessarQuartoEUltimoFilho= document.getElementById('quartoEUltimoFilho')
 
 // exercicio 1
 let imprimirElementoOndeVoce = ondeVoceEsta.parentNode;
-console.log(imprimirElementoOndeVoce)
+console.log(imprimirElementoOndeVoce);
 
 // exercicio 2
 let ondeVoceEstaParaPai = imprimirElementoOndeVoce.parentNode;  ondeVoceEstaParaPai.style.color = 'green';
 
 // exercicio 3
-acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página'
+acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página';
 
 // exercicio 4
-let primeiroFilhoAPartirPai = acessarPai.firstElementChild
-console.log(primeiroFilhoAPartirPai)
+let primeiroFilhoAPartirPai = acessarPai.firstChild
+console.log(primeiroFilhoAPartirPai);
 
 // exercicio 5
-console.log(ondeVoceEsta.parentNode)
+console.log(ondeVoceEsta.parentNode);
 
 // exercicio 6
 let textoSegundoFilho = ondeVoceEsta.nextSibling;
@@ -50,3 +50,9 @@ let textoSegundoFilho = ondeVoceEsta.nextSibling;
 
 // exercicio 7
 console.log(ondeVoceEsta.nextElementSibling);
+
+// exercicio 8
+console.log(acessarPai.nextElementSibling);
+
+// extra
+acessarTerceiroFilho.innerText = 'Terceiro Filho Elemento';
