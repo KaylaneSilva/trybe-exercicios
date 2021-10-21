@@ -46,7 +46,7 @@ console.log(ondeVoceEsta.parentNode)
 
 // exercicio 6
 let textoSegundoFilho = ondeVoceEsta.nextSibling;
-console.log(textoSegundoFilho);
+// console.log(textoSegundoFilho);
 
 // exercicio 7
-console.log(ondeVoceEsta.nextElementSibling)
+console.log(ondeVoceEsta.nextElementSibling);
