@@ -27,4 +27,9 @@ let acessarQuartoEUltimoFilho= document.getElementById('quartoEUltimoFilho')
 
 // parte I 
 
-console.log(ondeVoceEsta.parentNode)
+// exercicio 1
+let imprimirElementoOndeVoce = ondeVoceEsta.parentNode;
+console.log(imprimirElementoOndeVoce)
+
+// exercicio 2
+imprimirElementoOndeVoce.style.color = 'green';
