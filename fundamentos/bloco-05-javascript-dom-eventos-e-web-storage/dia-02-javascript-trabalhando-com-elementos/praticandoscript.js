@@ -33,3 +33,6 @@ console.log(imprimirElementoOndeVoce)
 
 // exercicio 2
 imprimirElementoOndeVoce.style.color = 'green';
+
+// exercicio 3
+acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página'
