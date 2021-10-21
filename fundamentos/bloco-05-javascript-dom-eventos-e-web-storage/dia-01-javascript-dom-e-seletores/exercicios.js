@@ -22,14 +22,14 @@
    paragrafo[1].innerText = 'Me vejo trabalhando em uma empresa que eu goste e com minha carreira alvancada';
    return paragrafo;
  }
-//  console.log(mudandoOParagrafo(paragrafo));
+ console.log(mudandoOParagrafo(paragrafo));
 
 //  parte 2
 function amareloParaCorNova (color) {
     quadrado.style.background = 'rgb(76,164,109)';
   return;
 }
-// console.log(amareloParaCorNova(quadrado));
+console.log(amareloParaCorNova(quadrado));
 
 // parte 3
 
@@ -37,7 +37,7 @@ function VermelhoParaBranco(cor) {
   paragrafoFundo.style.background = 'white';
   return;
 }
-// console.log(VermelhoParaBranco(paragrafoFundo));
+console.log(VermelhoParaBranco(paragrafoFundo));
 
 // parte 4
 
@@ -45,7 +45,7 @@ function corrigirTexto(texto) {
   textoh1[0].innerText= 'Exercício 5.1 - JavaScript';
   return;
 }
-// console.log(corrigirTexto(textoh1))
+console.log(corrigirTexto(textoh1))
 
 // parte 5
 function maiusculo(text) {
@@ -53,3 +53,11 @@ function maiusculo(text) {
   return;
 }
 console.log(maiusculo(paragrafoZero));
+
+// parte 6
+function todosParagrafos(tag) {
+ for (let tags = 0; tags < paragrafo.length; tags++) {
+   console.log(paragrafo[tags].innerHTML) 
+ }
+}
+console.log(todosParagrafos(paragrafo));
