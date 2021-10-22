@@ -22,8 +22,8 @@ let acessarPaiDoPai = document.getElementById('paiDoPai')
 let acessarPrimeiroFilho = document.getElementById('primeiroFilho')
 let acessarPrimeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
 let acesarSegundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho')
-let acessarTerceiroFilho= document.getElementById('terceiroFilho')
-let acessarQuartoEUltimoFilho= document.getElementById('quartoEUltimoFilho')
+let acessarTerceiroFilho = document.getElementById('terceiroFilho')
+let acessarQuartoEUltimoFilho = document.getElementById('quartoEUltimoFilho')
 
 // parte I 
 
@@ -32,7 +32,7 @@ let imprimirElementoOndeVoce = ondeVoceEsta.parentNode;
 // console.log(imprimirElementoOndeVoce);
 
 // exercicio 2
-let ondeVoceEstaParaPai = imprimirElementoOndeVoce.parentNode;  ondeVoceEstaParaPai.style.color = 'green';
+let ondeVoceEstaParaPai = imprimirElementoOndeVoce.parentNode; ondeVoceEstaParaPai.style.color = 'green';
 
 // exercicio 3
 acessarPrimeiroFilhoDoFilho.innerText = 'Olá, seja bem-vindo a essa página';
@@ -70,5 +70,13 @@ let criaNovoElemento = document.createElement('section');
 criaNovoElemento.id = 'irmaoOndeVoceEsta'
 acessarPai.appendChild(criaNovoElemento);
 let acessarIrmaoOndeVoceEsta = document.getElementById('irmaoOndeVoceEsta')
-  acessarIrmaoOndeVoceEsta.innerText = 'Criando um elemento irmão para o #elementoOndeVoceEsta';
-  acessarIrmaoOndeVoceEsta.style.color = 'blue'
+acessarIrmaoOndeVoceEsta.innerText = 'Criando um elemento irmão para o #elementoOndeVoceEsta';
+acessarIrmaoOndeVoceEsta.style.color = 'blue'
+
+// exercicio 2
+let filhoOndeVcEsta = document.createElement('section')
+filhoOndeVcEsta.id = 'filhoOndeVoceEsta'
+ondeVoceEsta.appendChild(filhoOndeVcEsta)
+
+filhoOndeVcEsta.innerText = 'Criado novo filho para o <strong>elementoOndeVoceEsta</strong>'
+filhoOndeVcEsta.style.color = 'rgb(53, 134, 121)'
