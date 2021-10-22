@@ -80,3 +80,10 @@ ondeVoceEsta.appendChild(filhoOndeVcEsta)
 
 filhoOndeVcEsta.innerText = 'Criado novo filho para o <strong>elementoOndeVoceEsta</strong>'
 filhoOndeVcEsta.style.color = 'rgb(53, 134, 121)'
+
+// exercicio 3 e 4
+let filhoDoFilhoPrimeiroFilho = document.createElement('section')
+filhoDoFilhoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
+primeiroFilhoDoFilho.appendChild(filhoDoFilhoPrimeiroFilho)
+
+console.log(filhoDoFilhoPrimeiroFilho.parentElement.parentElement.nextSibling.nextSibling)
