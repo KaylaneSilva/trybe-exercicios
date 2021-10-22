@@ -21,7 +21,7 @@ let acessarPai = document.getElementById('elementoOndeVoceEsta')
 let acessarPaiDoPai = document.getElementById('paiDoPai')
 let acessarPrimeiroFilho = document.getElementById('primeiroFilho')
 let acessarPrimeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
-let acesarSegundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho')
+let acessarSegundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho')
 let acessarTerceiroFilho = document.getElementById('terceiroFilho')
 let acessarQuartoEUltimoFilho = document.getElementById('quartoEUltimoFilho')
 
@@ -86,4 +86,17 @@ let filhoDoFilhoPrimeiroFilho = document.createElement('section')
 filhoDoFilhoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
 primeiroFilhoDoFilho.appendChild(filhoDoFilhoPrimeiroFilho)
 
-console.log(filhoDoFilhoPrimeiroFilho.parentElement.parentElement.nextSibling.nextSibling)
+// console.log(filhoDoFilhoPrimeiroFilho.parentElement.parentElement.nextSibling.nextSibling)
+
+
+// Parte III
+
+let filhosPai = acessarPai.childNodes
+for (let index = filhosPai.length - 1; index >= 0; index -=1)
+if (filhosPai[index].id !== 'elementoOndeVoceEsta') {
+  filhosPai[index].remove()
+}
+
+acessarSegundoEUltimoFilhoDoFilho.remove();
+
+console.log(acessarPai);
