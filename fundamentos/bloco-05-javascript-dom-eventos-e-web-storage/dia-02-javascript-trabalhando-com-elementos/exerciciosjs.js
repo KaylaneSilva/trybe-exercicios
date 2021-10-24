@@ -19,3 +19,8 @@ novoMain.appendChild(novaSection);
 let novoParagrafo = document.createElement('p');
 novoParagrafo.innerText = 'Novo parágrafo criado';
 novaSection.appendChild(novoParagrafo);
+
+// exercicio 5
+let sectionLeft = document.createElement('section');
+sectionLeft.className = 'left-content';
+novoMain.appendChild(sectionLeft);
