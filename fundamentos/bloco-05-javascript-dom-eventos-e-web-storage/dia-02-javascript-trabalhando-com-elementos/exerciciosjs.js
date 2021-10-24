@@ -26,6 +26,12 @@ sectionLeft.className = 'left-content';
 novoMain.appendChild(sectionLeft);
 
 // exercicio 6
-let sectionRigth = docuemtn.createElement('section');
+let sectionRigth = document.createElement('section');
 sectionRigth.className = 'rigth-content';
 novoMain.appendChild(sectionRigth);
+
+// exercicio 7
+let image = document.createElement('img');
+image.className = 'small-image';
+image.src = 'https://picsum.photos/200';
+sectionLeft.appendChild(image);
