@@ -9,3 +9,9 @@ let acessarBody = document.body;
 let novoMain = document.createElement('main');
 novoMain.className = 'main-content';
 acessarBody.appendChild(novoMain);
+
+// exercicio 3
+let novaSection = document.createElement('section');
+novaSection.className = 'center-content';
+novoMain.appendChild(novaSection);
+
