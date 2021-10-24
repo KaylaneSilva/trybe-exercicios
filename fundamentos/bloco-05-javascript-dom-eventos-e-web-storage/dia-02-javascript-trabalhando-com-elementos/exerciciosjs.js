@@ -54,3 +54,8 @@ function novosH3 (tag) {
   }
 }
 novosH3('h3');
+
+// parte 2
+
+// exercicio 10
+novaTag.className = 'title';
