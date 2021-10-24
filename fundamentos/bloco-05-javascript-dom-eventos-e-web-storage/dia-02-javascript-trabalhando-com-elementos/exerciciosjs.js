@@ -1,9 +1,9 @@
 // exercicio 1
 let acessarBody = document.body;
-  let novaTag = document.createElement('h1');
-  novaTag.id = 'tirulo1';
-  novaTag.innerText = 'Exercício 5.2 - JavaScript DOM';
-  acessarBody.appendChild(novaTag);
+let novaTag = document.createElement('h1');
+novaTag.id = 'tirulo1';
+novaTag.innerText = 'Exercício 5.2 - JavaScript DOM';
+acessarBody.appendChild(novaTag);
 
 // exercicio 2
 let novoMain = document.createElement('main');
@@ -35,3 +35,13 @@ let image = document.createElement('img');
 image.className = 'small-image';
 image.src = 'https://picsum.photos/200';
 sectionLeft.appendChild(image);
+
+// exercicio 8
+let newListNO = document.createElement('ul');
+sectionRigth.appendChild(newListNO);
+let conteudo = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+for (let index in conteudo){
+  const conteudoTag = document.createElement('li')
+  conteudoTag.innerHTML = conteudo[index]
+  newListNO.appendChild(conteudoTag)
+} 
