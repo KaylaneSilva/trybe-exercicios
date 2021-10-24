@@ -98,5 +98,3 @@ if (filhosPai[index].id !== 'elementoOndeVoceEsta') {
 }
 
 acessarSegundoEUltimoFilhoDoFilho.remove();
-
-console.log(acessarPai);
