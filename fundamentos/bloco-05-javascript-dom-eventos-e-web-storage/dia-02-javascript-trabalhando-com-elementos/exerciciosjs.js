@@ -24,3 +24,8 @@ novaSection.appendChild(novoParagrafo);
 let sectionLeft = document.createElement('section');
 sectionLeft.className = 'left-content';
 novoMain.appendChild(sectionLeft);
+
+// exercicio 6
+let sectionRigth = docuemtn.createElement('section');
+sectionRigth.className = 'rigth-content';
+novoMain.appendChild(sectionRigth);
