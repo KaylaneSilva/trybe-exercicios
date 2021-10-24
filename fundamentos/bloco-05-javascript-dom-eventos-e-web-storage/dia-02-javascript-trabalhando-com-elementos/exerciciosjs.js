@@ -66,4 +66,8 @@ novoMain.removeChild(sectionLeft)
 sectionRigth.style.marginRight = 'auto';
 
 //exercicio 14/5
-novaSection.parentElement.style.background = 'green'
+novaSection.parentElement.style.background = 'green';
+
+// exercicio 15/6
+newListNO.removeChild(document.getElementsByTagName('li')[9]);
+newListNO.removeChild(document.getElementsByTagName('li')[8]);
