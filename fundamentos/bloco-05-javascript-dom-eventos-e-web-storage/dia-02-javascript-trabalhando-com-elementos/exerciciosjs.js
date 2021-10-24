@@ -15,3 +15,7 @@ let novaSection = document.createElement('section');
 novaSection.className = 'center-content';
 novoMain.appendChild(novaSection);
 
+// exercicio 4
+let novoParagrafo = document.createElement('p');
+novoParagrafo.innerText = 'Novo parágrafo criado';
+novaSection.appendChild(novoParagrafo);
