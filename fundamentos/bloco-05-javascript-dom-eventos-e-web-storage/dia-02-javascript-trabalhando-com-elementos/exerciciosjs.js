@@ -46,16 +46,18 @@ for (let index in conteudo){
   newListNO.appendChild(conteudoTag);
 }; 
 
-// exercicio 9
-function novosH3 (tag) {
+// exercicio 9 e 11/2
   for (let quantidade = 1; quantidade < 4; quantidade++){
-    let newH3 = document.createElement(tag)
+    let newH3 = document.createElement('h3')
+    newH3.className = 'description';
     novoMain.appendChild(newH3)
   }
-}
-novosH3('h3');
+
 
 // parte 2
 
-// exercicio 10
+// exercicio 10/1
 novaTag.className = 'title';
+
+// exercicio 12/3
+novoMain.removeChild(sectionLeft)
