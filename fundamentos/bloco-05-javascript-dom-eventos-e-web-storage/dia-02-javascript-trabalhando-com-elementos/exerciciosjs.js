@@ -4,3 +4,8 @@ let acessarBody = document.body;
   novaTag.id = 'tirulo1';
   novaTag.innerText = 'Exercício 5.2 - JavaScript DOM';
   acessarBody.appendChild(novaTag);
+
+// exercicio 2
+let novoMain = document.createElement('main');
+novoMain.className = 'main-content';
+acessarBody.appendChild(novoMain);
