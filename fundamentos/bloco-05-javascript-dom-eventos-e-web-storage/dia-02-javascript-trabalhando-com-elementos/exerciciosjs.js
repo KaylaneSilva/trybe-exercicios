@@ -61,3 +61,6 @@ novaTag.className = 'title';
 
 // exercicio 12/3
 novoMain.removeChild(sectionLeft)
+
+// exercicio 13/4
+sectionRigth.style.marginRight = 'auto';
