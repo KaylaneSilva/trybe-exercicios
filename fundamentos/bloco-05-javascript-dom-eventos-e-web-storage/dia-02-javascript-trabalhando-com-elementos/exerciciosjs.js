@@ -39,9 +39,18 @@ sectionLeft.appendChild(image);
 // exercicio 8
 let newListNO = document.createElement('ul');
 sectionRigth.appendChild(newListNO);
-let conteudo = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+let conteudo = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
 for (let index in conteudo){
-  const conteudoTag = document.createElement('li')
-  conteudoTag.innerHTML = conteudo[index]
-  newListNO.appendChild(conteudoTag)
-} 
+  const conteudoTag = document.createElement('li');
+  conteudoTag.innerHTML = conteudo[index];
+  newListNO.appendChild(conteudoTag);
+}; 
+
+// exercicio 9
+function novosH3 (tag) {
+  for (let quantidade = 1; quantidade < 4; quantidade++){
+    let newH3 = document.createElement(tag)
+    novoMain.appendChild(newH3)
+  }
+}
+novosH3('h3');
