@@ -14,14 +14,42 @@
     <h1>Formulário para Cadastros de Currículos</h1>
   </header>
   <form action="get">
-    <div>
+    <section id="cadastro-pessoais">
       <fieldset>
-        <div>
+        <section>
           <label for="name">Nome: </label>
           <input type="text" name="name" id="name" maxlength="40" required>
-        </div>
+        </section>
+        <section>
+          <label for="email">Email: </label>
+          <input type="text" name="email" id="email" maxlength="50" required>
+        </section>
+        <section>
+          <label for="cpf">CPF: </label>
+          <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        </section>
+        <section>
+          <label for="adress">Endereço: </label>
+          <input type="text" name="adress" id="adress" maxlength="200" required>
+        </section>
+        <section>
+          <label for="cidade">cidade: </label>
+          <input type="text" name="cidade" id="cidade3" maxlength="28" required>
+        </section>
+        <section>
+          <label for="state">Estado: </label>
+          <select required name="all-states" id="state"></select>
+          </select>
+        </section>
+        <section>
+          <label for="type">Tipo: </label>
+          <input type="radio" name="tipoCasa" id="casa" value="casa" required>
+          <span>Casa</span>
+          <input type="radio" name="tipoCasa" id="apartamento" value="apartamento" required>
+          <span>Apartamento</span>
+        </section>
       </fieldset>
-    </div>
+    </section>
   </form>
   <script src="script.js"></script>
 </body>
