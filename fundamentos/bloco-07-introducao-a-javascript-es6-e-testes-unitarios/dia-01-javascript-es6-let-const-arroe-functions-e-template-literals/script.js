@@ -16,4 +16,18 @@ const testScope = (escopo) => {
   }
 }
 
-testScope(true);
+// testScope(true);
+
+/* exercicio 2
+  Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!".
+ */
+
+let oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const ordemCrescente = (numerosOrdenados) => {
+  let ordenados = [2, 3, 4, 7, 10, 13]
+  const message = `Os números ${ordenados} se encontram ordenados de forma crescente!`
+  console.log(message)
+}
+  // ordemCrescente(numerosOrdenados);
+  ordemCrescente(oddsAndEvens)
