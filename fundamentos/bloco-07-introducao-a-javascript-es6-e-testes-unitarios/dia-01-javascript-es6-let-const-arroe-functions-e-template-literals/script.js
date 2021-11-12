@@ -1,4 +1,4 @@
-        // Parte 1
+// Parte 1
 
 /* exercicio 1 
   Modifique a estrutura da função para que ela seja uma arrow function .
@@ -9,10 +9,10 @@ const testScope = (escopo) => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
-    console.log(ifScope);
+    // console.log(ifScope);
   } else {
     let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
-    console.log(elseScope);
+    // console.log(elseScope);
   }
 }
 
@@ -27,7 +27,23 @@ let oddsAndEvens = [13, 3, 4, 10, 7, 2];
 const ordemCrescente = (numerosOrdenados) => {
   let ordenados = [2, 3, 4, 7, 10, 13]
   const message = `Os números ${ordenados} se encontram ordenados de forma crescente!`
-  console.log(message)
+  // console.log(message)
 }
-  // ordemCrescente(numerosOrdenados);
-  ordemCrescente(oddsAndEvens)
+// ordemCrescente(numerosOrdenados);
+ordemCrescente(oddsAndEvens)
+
+
+// Parte II
+
+// exercicio 1
+
+const fatorial = (n) => {
+  for (let index = n; index <= n; index -= 1) {
+    if (index > 0) {
+      let conta = index;
+      let result = index * conta;
+      console.log(result)
+    }
+  }
+}
+console.log(fatorial(4))
