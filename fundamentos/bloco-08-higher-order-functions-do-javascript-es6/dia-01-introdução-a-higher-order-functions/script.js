@@ -16,4 +16,20 @@ const newEmployees = (dados) => {
   return employees;
 };
 
-console.log(newEmployees(dados))
+// console.log(newEmployees(dados))
+
+// exercicio 2
+
+const sorteio = (numerosSorteados, myNumber) => {
+  if (myNumber === numerosSorteados()) {
+    return 'Parabéns você ganhou!!'
+  }
+  return 'Tente novamente. :('
+}
+
+const numerosSorteados = () => {
+  let numeroSorteado = Math.round(Math.random() * 5);
+  return numeroSorteado;
+}
+
+console.log(sorteio(numerosSorteados, 4));
