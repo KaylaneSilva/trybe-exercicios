@@ -1,6 +1,6 @@
 // exercicio 1 
 const dados = (nomeCompleto) => {
-  const email = `${nomeCompleto.replace(' ','_').toLowerCase()}@trybe.com`
+  const email = `${nomeCompleto.replace(' ', '_').toLowerCase()}@trybe.com`
   return {
     nome: nomeCompleto,
     email: email,
@@ -32,4 +32,39 @@ const numerosSorteados = () => {
   return numeroSorteado;
 }
 
-console.log(sorteio(numerosSorteados, 4));
+// console.log(sorteio(numerosSorteados, 4));
+
+// exercicio 3
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const gabarito = (rightAnswers, studentAnswers, callback) => {
+  let checkagem = [];
+  for (let index = 0; index < studentAnswers.length; index += 1) {
+    if (studentAnswers[index] === rightAnswers[index]) {
+      checkagem += 'a,';
+    }
+    if (studentAnswers[index] === 'N.A') {
+      checkagem += 's.r,';
+    }
+    checkagem += 'e,';
+  }
+  return callback(checkagem);
+  // return checkagem;
+}
+
+let pontuacao = (array) => {
+  let pontos = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === 'a') {
+      pontos += 1;
+    } 
+    if (array[index] === 'e') {
+      pontos -= 0.5;
+    }
+  }
+  return pontos
+}
+// console.log(pontuacao(['a','e','s.r','e','a','e','a','e','a','e','e','s.r','e','a','e','a','e','e']))
+console.log(gabarito(RIGHT_ANSWERS, STUDENT_ANSWERS, pontuacao));
+// console.log(gabarito(RIGHT_ANSWERS, STUDENT_ANSWERS))
