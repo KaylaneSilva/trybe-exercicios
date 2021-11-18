@@ -21,10 +21,8 @@ const newEmployees = (dados) => {
 // exercicio 2
 
 const sorteio = (numerosSorteados, myNumber) => {
-  if (myNumber === numerosSorteados()) {
-    return 'Parabéns você ganhou!!'
-  }
-  return 'Tente novamente. :('
+ let checkagem = (myNumber === numerosSorteados() ? 'Parabéns você ganhou!!' : 'Tente novamente. :(')
+ return checkagem;
 }
 
 const numerosSorteados = () => {
@@ -32,7 +30,7 @@ const numerosSorteados = () => {
   return numeroSorteado;
 }
 
-// console.log(sorteio(numerosSorteados, 4));
+console.log(sorteio(numerosSorteados, 4));
 
 // exercicio 3
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
@@ -50,7 +48,6 @@ const gabarito = (rightAnswers, studentAnswers, callback) => {
     checkagem += 'e,';
   }
   return callback(checkagem);
-  // return checkagem;
 }
 
 let pontuacao = (array) => {
@@ -65,6 +62,4 @@ let pontuacao = (array) => {
   }
   return pontos
 }
-// console.log(pontuacao(['a','e','s.r','e','a','e','a','e','a','e','e','s.r','e','a','e','a','e','e']))
-console.log(gabarito(RIGHT_ANSWERS, STUDENT_ANSWERS, pontuacao));
-// console.log(gabarito(RIGHT_ANSWERS, STUDENT_ANSWERS))
+// console.log(gabarito(RIGHT_ANSWERS, STUDENT_ANSWERS, pontuacao));
