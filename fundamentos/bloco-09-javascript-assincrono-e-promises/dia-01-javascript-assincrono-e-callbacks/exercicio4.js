@@ -7,8 +7,8 @@ const getMarsTemperature = () => {
 
 // crie a função sendMarsTemperature abaixo
 const sendMarsTemperature = (callback) => {
- const message = `Mars temperature is: ${callback()} degree Celsius`;
- console.log(message);
+  const message = `Mars temperature is: ${callback()} degree Celsius`;
+  console.log(message);
 }
 
 setTimeout(() => sendMarsTemperature(getMarsTemperature), messageDelay()); // imprime "Mars temperature is: 20 degree Celsius", por exemplo
