@@ -16,7 +16,7 @@ const greet = (temperature) =>
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (callback) => {
   const temperature = getMarsTemperature()
-  return callback(temperature);
+  setTimeout(() => callback(temperature), messageDelay());
 }
 
 sendMarsTemperature(temperatureInFahrenheit); // imprime "It is currently 47ºF at Mars", por exemplo
