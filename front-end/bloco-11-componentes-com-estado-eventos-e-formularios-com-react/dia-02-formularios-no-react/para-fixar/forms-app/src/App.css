@@ -2,3 +2,18 @@
   display: flex;
   flex-direction: column;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-inputs, .div-resume {
+  display: flex;
+  flex-direction: column;
+  margin: 1%
+}
+
+input, select, textarea{
+  margin-top: 1%;
+}
