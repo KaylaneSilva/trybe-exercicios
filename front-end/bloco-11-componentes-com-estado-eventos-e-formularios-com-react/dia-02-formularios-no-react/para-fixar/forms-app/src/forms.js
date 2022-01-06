@@ -6,17 +6,18 @@ class Forms extends React.Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      name: '',
+      nome: '',
       termo: false,
       regiao: '',
       assunto: '',
     };
   }
 
-  handleChange(event) {
-    // const { target } = event;
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
-      name: event.target.value,
+      [ name ]: value,
     });
   }
   render() {
@@ -37,7 +38,7 @@ class Forms extends React.Component {
               <input
                 type='checkbox'
                 name="termo"
-              // onChange={}
+                onChange={this.handleChange}
               />
               Você aceita os termos e diretrizes
             </label>
@@ -45,6 +46,8 @@ class Forms extends React.Component {
               Região
               <select
                 name="regiao"
+                value={this.state.regiao}
+                onChange={this.handleChange}
               >
                 <option></option>
                 <option>Norte</option>
@@ -56,8 +59,11 @@ class Forms extends React.Component {
             </label>
             <label>
               Resume seu assunto
-              <textarea name='assunto'
+              <textarea 
+                name='assunto'
                 maxLength={300}
+                value={this.state.assunto}
+                onChange={this.handleChange}
               ></textarea>
             </label>
           </form>
