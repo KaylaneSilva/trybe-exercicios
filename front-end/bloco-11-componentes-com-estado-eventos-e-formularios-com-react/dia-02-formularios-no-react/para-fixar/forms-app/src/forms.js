@@ -66,6 +66,13 @@ class Forms extends React.Component {
                 onChange={this.handleChange}
               ></textarea>
             </label>
+            <label>
+              Coloque sua foto
+              <input
+                name='arquivo'
+                type='file'
+              />
+            </label>
           </form>
         </div>
       </section>
