@@ -1,4 +1,6 @@
 import React from "react";
+import InputName from "./components/inputName";
+import TextArea from "./components/TextArea";
 
 class Forms extends React.Component {
   constructor() {
@@ -28,15 +30,10 @@ class Forms extends React.Component {
           <form className="forms">
             <fieldset>
               <h4>Pré-Cadastro</h4>
-              <label>
-                Nome
-                <input
-                  className="div-inputs"
-                  name="nome"
-                  value={this.state.nome}
-                  onChange={this.handleChange}
-                />
-              </label>
+              <InputName
+                handleChange={this.handleChange}
+                state={this.state.nome}
+              />
               <label>
                 <input
                   type='checkbox'
@@ -62,7 +59,7 @@ class Forms extends React.Component {
                 </select>
               </label>
               <label>
-                Coloque sua foto: 
+                Coloque sua foto:
                 <input
                   className="div-inputs"
                   name='arquivo'
@@ -70,16 +67,10 @@ class Forms extends React.Component {
                 />
               </label>
             </fieldset>
-            <label>
-              Resume seu assunto
-              <textarea
-                className="div-resume"
-                name='assunto'
-                maxLength={300}
-                value={this.state.assunto}
-                onChange={this.handleChange}
-              ></textarea>
-            </label>
+            <TextArea
+              handleChange={this.handleChange}
+              state={this.state.assunto}
+            />
           </form>
         </div>
       </section>
