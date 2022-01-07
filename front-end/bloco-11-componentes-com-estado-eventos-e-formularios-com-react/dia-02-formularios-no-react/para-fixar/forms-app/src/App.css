@@ -15,5 +15,11 @@ fieldset {
 }
 
 input, select, textarea{
-  margin-top: 1%;
+  margin: 2% 0 2% ;
+}
+
+.error-message {
+  color: red;
+  font-size: 2vw;
+  margin-left: 3vw;
 }

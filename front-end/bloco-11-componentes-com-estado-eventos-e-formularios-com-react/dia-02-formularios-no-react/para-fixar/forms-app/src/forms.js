@@ -1,6 +1,7 @@
 import React from "react";
 import InputName from "./components/inputName";
 import TextArea from "./components/TextArea";
+import InputEmail from "./components/inputEmail";
 
 class Forms extends React.Component {
   constructor() {
@@ -9,6 +10,7 @@ class Forms extends React.Component {
 
     this.state = {
       nome: '',
+      email: '',
       termo: false,
       regiao: '',
       assunto: '',
@@ -33,6 +35,10 @@ class Forms extends React.Component {
               <InputName
                 handleChange={this.handleChange}
                 state={this.state.nome}
+              />
+              <InputEmail
+                handleChange={this.handleChange}
+                state={this.state.email}
               />
               <label>
                 <input

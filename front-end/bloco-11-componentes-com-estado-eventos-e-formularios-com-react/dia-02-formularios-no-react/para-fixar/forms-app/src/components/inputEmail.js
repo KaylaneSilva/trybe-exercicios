@@ -1,18 +1,19 @@
 import React from "react";
 
-class InputName extends React.Component {
+class InputEmail extends React.Component {
   render() {
     const { handleChange, state } = this.props;
 
     let error = undefined;
-    if(state.length > 100) error = "Número de caracteres inválido";
+    if(!state.match(/^\S+@\S+$/i) && state.length > 2) error = "Email Inválido";
     
     return (
       <label>
-        Nome
+        Email
         <input
           className="div-inputs"
-          name="nome"
+          type="email"
+          name="email"
           value={state}
           onChange={handleChange}
         />
@@ -22,4 +23,4 @@ class InputName extends React.Component {
   }
 }
 
-export default InputName;
+export default InputEmail;
