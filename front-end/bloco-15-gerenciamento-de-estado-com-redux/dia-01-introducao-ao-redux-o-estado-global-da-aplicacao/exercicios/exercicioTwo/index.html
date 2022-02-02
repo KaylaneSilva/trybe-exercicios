@@ -37,7 +37,7 @@
       };
 
       const CHANGE_NAMES_REDUCER_ONE = "CHANGE_NAMES_REDUCER_ONE";
-      const CHANGE_NAMES_REDUCER_TWOs = "CHANGE_NAMES_REDUCER_TWO";
+      const CHANGE_NAMES_REDUCER_TWO = "CHANGE_NAMES_REDUCER_TWO";
 
       const actionNamesOne = () => {
         return {
@@ -87,10 +87,19 @@
 
       const store = Redux.createStore(combReducers);
 
+      store.subscribe(() => {
+        const { meuPrimeiroReducer, meuSegundoReducer } = store.getState()
+
+        document.getElementById('nome-1').innerHTML = meuPrimeiroReducer.nome;
+        document.getElementById('sobrenome-1').innerHTML = meuPrimeiroReducer.sobrenome;
+        document.getElementById('nome-2').innerHTML = meuSegundoReducer.nome;
+        document.getElementById('sobrenome-2').innerHTML = meuSegundoReducer.sobrenome;
+      })
+
       window.onload = () => {
         setTimeout(() => {
-          store.dispatch(actionNamesOne);
-          store.dispatch(actionNamesTwo);
+          store.dispatch(actionNamesOne());
+          store.dispatch(actionNamesTwo());
         }, 3000);
       };
     </script>
