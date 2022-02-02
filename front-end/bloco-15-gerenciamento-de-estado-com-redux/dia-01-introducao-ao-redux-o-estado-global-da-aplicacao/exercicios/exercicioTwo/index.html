@@ -41,11 +41,17 @@
 
       const actionNamesOne = () => {
         return {
-          type: CHANGE_NAMES_REDUCER_ONE
+          type: CHANGE_NAMES_REDUCER_ONE,
+          nome: 'Kaylane',
+          sobrenome: 'Silva',
         }
       };
       const actionNamesTwo = () => {
-        type: CHANGE_NAMES_REDUCER_TWO
+        return {
+          type: CHANGE_NAMES_REDUCER_TWO,
+          nome: 'Roberta',
+          sobrenome: 'Fernandes',
+        }
       };
 
       const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
@@ -80,6 +86,13 @@
       })
 
       const store = Redux.createStore(combReducers);
+
+      window.onload = () => {
+        setTimeout(() => {
+          store.dispatch(actionNamesOne);
+          store.dispatch(actionNamesTwo);
+        }, 3000);
+      };
     </script>
   </body>
 </html>
