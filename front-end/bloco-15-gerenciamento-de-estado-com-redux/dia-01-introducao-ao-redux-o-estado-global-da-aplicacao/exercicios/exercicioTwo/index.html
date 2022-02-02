@@ -36,8 +36,26 @@
         cidade: 'São Paulo',
       };
 
+      const CHANGE_NAMES_REDUCER_ONE = "CHANGE_NAMES_REDUCER_ONE";
+      const CHANGE_NAMES_REDUCER_TWOs = "CHANGE_NAMES_REDUCER_TWO";
+
+      const actionNamesOne = () => {
+        return {
+          type: CHANGE_NAMES_REDUCER_ONE
+        }
+      };
+      const actionNamesTwo = () => {
+        type: CHANGE_NAMES_REDUCER_TWO
+      };
+
       const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
         switch (action.type) {
+          case 'CHANGE_NAMES_REDUCER_ONE':
+            return {
+              ...state,
+              nome: action.nome,
+              sobrenome: action.sobrenome,
+            };
           default:
             return state;
         }
@@ -45,6 +63,12 @@
 
       const meuSegundoReducer = (state = ESTADO_INICIAL_2, action) => {
         switch (action.type) {
+          case 'CHANGE_NAMES_REDUCER_TWO':
+            return {
+              ...state,
+              nome: action.nome,
+              sobrenome: action.sobrenome,
+            };
           default:
             return state;
         }
