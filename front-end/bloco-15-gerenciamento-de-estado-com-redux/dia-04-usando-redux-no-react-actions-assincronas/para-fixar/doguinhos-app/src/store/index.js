@@ -1,4 +1,7 @@
-import { createStore } from 'redux';
+// src/store/index.js
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+// import { composeWithDevTools } from 'redux-devtools-extension';
 
 const GET_IMAGE = 'GET_IMAGE';
 const REQUEST_IMAGE = 'REQUEST_IMAGE';
@@ -20,9 +23,9 @@ export function fetchDog() {
   return (dispatch) => {
     dispatch(requestDog());
     return fetch('https://dog.ceo/api/breeds/image/random')
-      .then(response => response.json())
-      .then(json => dispatch(getImage(json)))
-      .catch(error => dispatch(failedRequest(error)))
+     .then(response => response.json())
+     .then(json => dispatch(getImage(json)))
+     .catch(error => dispatch(failedRequest(error)))
   };
 }
 
@@ -45,6 +48,6 @@ function reducer(state = initialState, action) {
   }
 }
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;
