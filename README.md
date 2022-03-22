@@ -69,7 +69,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 
 
-## Front- End :hourglass_flowing_sand:
+## Front - End :white_check_mark:
 
 ##### Bloco 10: Introdução à React
 
@@ -118,3 +118,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 18-1: _Projeto_
 
+## Back - End :hourglass_flowing_sand:
