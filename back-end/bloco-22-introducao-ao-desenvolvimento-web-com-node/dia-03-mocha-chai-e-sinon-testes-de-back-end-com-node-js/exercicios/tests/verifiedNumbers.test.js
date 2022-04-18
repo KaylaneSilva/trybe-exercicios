@@ -25,3 +25,12 @@ describe('Teste com número 0', () => {
     expect(verifieNumber).to.be.equal('neutro');
   })
 });
+
+describe('Teste com string "Olá"', () => {
+  it('Deve falhar', () => {
+    const verifieNumber = verifiedNumber('Olá');
+  const messageError = "Can't do the operation as it's not a number";
+
+    expect(verifieNumber).to.be.equal(messageError);
+  })
+});
