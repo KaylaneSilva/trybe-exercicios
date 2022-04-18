@@ -1,25 +1,27 @@
 const { expect } = require('chai');
 
+const verifiedNumber = require('../verifiedNumbers');
+
 describe('Teste com número -1', () => {
   it('Deve retorna negativo.', () => {
-    const verifiedNumber = verifieNumber(-1);
+    const verifieNumber = verifiedNumber(-1);
 
-    expect(verifiedNumber).to.be.equal('negativo');
+    expect(verifieNumber).to.be.equal('negativo');
   })
 });
 
 describe('Teste com número 22', () => {
   it('Deve retornar positivo.', () => {
-    const verifiedNumber = verifieNumber(22);
+    const verifieNumber = verifiedNumber(22);
 
-    expect(verifiedNumber).to.be.equal('positivo');
+    expect(verifieNumber).to.be.equal('positivo');
   })
 });
 
 describe('Teste com número 0', () => {
   it('Deve retorna neutro', () => {
-    const verifiedNumber = verifieNumber(0);
+    const verifieNumber = verifiedNumber(0);
 
-    expect(verifiedNumber).to.be.equal('neutro');
+    expect(verifieNumber).to.be.equal('neutro');
   })
 });
