@@ -1,10 +1,18 @@
 const { expect } = require('chai');
-// const sinon = require('sinon');
-// const fs = require('fs');
+const sinon = require('sinon');
+const fs = require('fs');
 
 const writeFile = require('../writeFiles');
 
 describe('Testando a função "writeFile"', () => {
+  before(() => {
+    sinon.stub(fs, 'writeFileSync');
+  });
+
+  after(() => {
+    fs.writeFileSync.restore();
+  });
+
   it('A resposta é uma string.', () => {
     const response = writeFile('arquivo1.txt', 'Uma frase qualquer.');
     
