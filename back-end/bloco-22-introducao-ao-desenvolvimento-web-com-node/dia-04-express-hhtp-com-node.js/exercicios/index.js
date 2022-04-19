@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { response } = require('express');
 
 const app = express();
 
@@ -13,6 +14,17 @@ app.post('/hello', (req, res) => {
   const { name } = req.body;
 
   res.json({ message: `Hello, ${name}` });
+});
+
+app.post('/greetings', (req, res) => {
+  const { name, age } = req.body;
+
+  if(parseInt(age) <= 17) {
+    res.status(401).json({ message: 'Unauthorized'});
+    return;
+  }
+
+  res.status(200).json({ message: `Hello, ${name}`});
 });
 
 app.listen(3001, () => {
