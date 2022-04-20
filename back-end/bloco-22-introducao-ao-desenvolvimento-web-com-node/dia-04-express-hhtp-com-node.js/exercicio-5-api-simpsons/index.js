@@ -2,6 +2,7 @@ const fs = require('fs').promises;
 const express = require('express');
 const bodyParser = require('body-parser');
 const res = require('express/lib/response');
+const { json } = require('express/lib/response');
 
 const app = express();
 app.use(bodyParser.json());
@@ -12,9 +13,26 @@ const readFileSimpsons = async () => {
 };
 
 app.get('/simpsons', async (_req, resp) => {
+    try {
+      const getSimpsons = await readFileSimpsons();
+      return resp.status(200).json(getSimpsons);
+    } catch (error) {
+      return res.status(500).end();
+    }
+  });
+
+app.get('/simpsons/:id', async (req, res) => {
   try {
     const getSimpsons = await readFileSimpsons();
-    return resp.status(200).json(getSimpsons);
+    const { id } = req.params;
+    const filteredById = getSimpsons.find(character => character.id === id);
+
+    if (!filteredById) {
+      res.status(404).json({ message: 'simpson not found'});
+      return;
+    }
+    return res.status(200).json(filteredById);
+  
   } catch (error) {
     return res.status(500).end();
   }
