@@ -1,4 +1,4 @@
-const Book = require('../models/book');
+const { Book } = require('../models');
 
 const getAll = async () => {
   const books = await Book.findAll();
@@ -7,4 +7,4 @@ const getAll = async () => {
 
 module.exports = {
   getAll,
-}
+};
