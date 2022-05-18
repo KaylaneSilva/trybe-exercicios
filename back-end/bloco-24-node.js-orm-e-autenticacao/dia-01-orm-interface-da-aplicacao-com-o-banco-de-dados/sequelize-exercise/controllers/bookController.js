@@ -16,7 +16,22 @@ const getById = async (req, res) => {
   return res.status(200).json(getBook);
 };
 
+const createBook = async (req, res) => {
+  const newBook = req.body;
+
+  try {
+    const createdBook = Book.createBook(newBook);
+    
+    return res.status(200).json(createdBook);
+  
+  } catch (error) {
+    console.log(e.message);
+    return res.status(500).json({ message: "Something go wrong! Look you console."});
+  }
+}
+
 module.exports = {
   getAll,
   getById,
+  createBook,
 }
