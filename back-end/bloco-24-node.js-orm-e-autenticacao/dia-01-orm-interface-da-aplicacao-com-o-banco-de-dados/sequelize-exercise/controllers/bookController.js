@@ -22,7 +22,7 @@ const createBook = async (req, res) => {
   try {
     const createdBook = Book.createBook(newBook);
     
-    return res.status(200).json(createdBook);
+    return res.status(200).json(newBook);
   
   } catch (error) {
     console.log(e.message);
