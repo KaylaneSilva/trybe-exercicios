@@ -24,7 +24,7 @@ const createBook = async (req, res) => {
     
     return res.status(200).json(newBook);
   
-  } catch (error) {
+  } catch (e) {
     console.log(e.message);
     return res.status(500).json({ message: "Something go wrong! Look you console."});
   }
@@ -42,7 +42,21 @@ const updateBook = async (req, res) => {
     
     return res.status(200).json(newBook);
   
-  } catch (error) {
+  } catch (e) {
+    console.log(e.message);
+    return res.status(500).json({ message: "Something go wrong! Look you console."});
+  }
+}
+
+const deleteBook = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    await Book.deleteBook(id);
+
+    return res.status(201).end();
+  
+  } catch (e) {
     console.log(e.message);
     return res.status(500).json({ message: "Something go wrong! Look you console."});
   }
@@ -53,4 +67,5 @@ module.exports = {
   getById,
   createBook,
   updateBook,
+  deleteBook
 }
