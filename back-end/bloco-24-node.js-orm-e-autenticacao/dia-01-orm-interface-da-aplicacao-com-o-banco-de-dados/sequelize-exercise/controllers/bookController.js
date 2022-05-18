@@ -30,8 +30,27 @@ const createBook = async (req, res) => {
   }
 }
 
+const updateBook = async (req, res) => {
+  const newBook = req.body;
+  const { id } = req.params;
+
+  try {
+    const updatedBook = await Book.updateBook(id, newBook);
+    console.log(updatedBook);
+
+  if(!updatedBook) return res.status(404).json({ message: "Book not found"});
+    
+    return res.status(200).json(newBook);
+  
+  } catch (error) {
+    console.log(e.message);
+    return res.status(500).json({ message: "Something go wrong! Look you console."});
+  }
+}
+
 module.exports = {
   getAll,
   getById,
   createBook,
+  updateBook,
 }
