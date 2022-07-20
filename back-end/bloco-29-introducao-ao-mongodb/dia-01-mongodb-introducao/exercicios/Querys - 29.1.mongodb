@@ -1,0 +1,41 @@
+// exercício 1
+db.bios.find({ _id: 8 });
+
+// exercício 2
+db.bios.find({ _id: 8 }, { _id: true, name: true });
+
+// exercício 3
+db.bios.find({ _id: 8 }, { _id: false, birth:true, name: true });
+
+// exercício 4
+db.bios.find({ "name.first": "John"}).pretty();
+
+// exercício 5
+db.bios.find().limit(3).pretty();
+
+// exercício 6
+db.bios.find().skip(5).limit(2).pretty();
+
+use class;
+
+// exercício 7
+db.books.countDocuments();
+
+// exercício 8
+db.books.countDocuments({ status: "PUBLISHED"});
+
+// exercício 9
+db.books.find(
+  {}, 
+  {
+    title: true, isbn: true, pageCount: true, _id: false,
+  }
+).limit(3);
+
+// exercício 10
+db.books.find(
+  { status: "MEAP"}, 
+  {
+    title: true, authors: true, status: true,
+  }
+).skip(5).limit(10);
